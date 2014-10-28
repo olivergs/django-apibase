@@ -31,6 +31,6 @@ setup(
     keywords = ['sitetools', 'django', 'utility', ],
     classifiers = [],
     install_requires=[
-          'django-sitetools',
+          'django-sitetools', 'rsa',
     ],
 )
