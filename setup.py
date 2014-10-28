@@ -28,9 +28,9 @@ setup(
     author='Oliver Gutiérrez',
     author_email='ogutsua@gmail.com',
     url = 'https://github.com/R3v1L/django-apibase',
-    keywords = ['sitetools', 'django', 'utility', ],
+    keywords = ['apibase', 'django', 'utility', 'api'],
     classifiers = [],
     install_requires=[
-          'django-sitetools', 'rsa',
+          'rsa',
     ],
 )
