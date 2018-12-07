@@ -91,7 +91,7 @@ def json_encrypted_post_data(apikey,pubkey,data):
 		'data': b64encrypted,
 	}
 
-def json_signed_request(url,apikey,privkey,data):
+def json_signed_request(url,apikey,privkey,data,*args,**kwargs):
 	"""
 	Send a signed request
 
@@ -111,7 +111,7 @@ def json_signed_request(url,apikey,privkey,data):
 	# Prepare data
 	postdata=json_signed_post_data(apikey,privkey,data)
 	# Send request
-	return nvp_request(url,postdata,method='POST')
+	return nvp_request(url,postdata,method='POST',*args,**kwargs)
 
 def json_encrypted_request(url,apikey,pubkey,data,json=True):
 	"""
