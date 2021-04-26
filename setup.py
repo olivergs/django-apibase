@@ -31,6 +31,6 @@ setup(
     keywords = ['apibase', 'django', 'utility', 'api'],
     classifiers = [],
     install_requires=[
-          'rsa == 4.0',
+          'rsa == 4.1',
     ],
 )
